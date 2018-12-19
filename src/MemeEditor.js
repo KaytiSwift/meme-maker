@@ -17,8 +17,18 @@ class MemeEditor extends Component {
 
     pickImage = (i) => {        
         const image = i.target.src;
-        console.log(image);
         this.setState({selectedImage: image})
+    }
+
+    setTopText = (t) => {
+        const text = t.target.value;
+        console.log(text);
+        this.setState({topText: text})                                                
+    }
+
+    setBottomText = (t) => {
+        const text = t.target.value
+        this.setState({bottomText: text})
     }
 
     render() {
@@ -30,10 +40,14 @@ class MemeEditor extends Component {
                     selectedImage={selectedImage}
                     pickImage={this.pickImage}/>
                 <MemePreview 
+                    topText={topText}
+                    bottomText={bottomText}
                     selectedImage={selectedImage}/>
                 <TextInputs
                     topText={topText}
-                    bottomText={bottomText}/>
+                    bottomText={bottomText}
+                    setTopText={this.setTopText}
+                    setBottomText={this.setBottomText}/>
             </div>
         );
     }

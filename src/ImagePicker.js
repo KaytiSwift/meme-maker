@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import './ImagePicker.css'
 
 class ImagePicker extends Component {
     render() {
-        const {selectedImage, images, pickImage} = this.props;
+        const {images, pickImage} = this.props;
         const imagesList = images.map(i => <img onClick={pickImage} src={i} alt='dog' key={i}/>)
         return(
-            <div>
+            <div className="ImagePicker">
                 {imagesList}                
             </div>
         );

@@ -1,0 +1,20 @@
+div.MemePreview {
+    margin:  1em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center;
+    text-align: center;
+}
+
+.MemePreview img {
+    visibility: hidden;
+    max-width: 100%;
+    border: black solid 1px;
+}
+
+.MemePreview p {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px #0c0c0c;
+}
