@@ -3,8 +3,14 @@ import './ImagePicker.css'
 
 class ImagePicker extends Component {
     render() {
-        const {images, pickImage} = this.props;
-        const imagesList = images.map(i => <img onClick={pickImage} src={i} alt='dog' key={i}/>)
+        const {images, pickImage, selectedImage} = this.props;
+    const imagesList = images.map(i => {
+        let cssClass = '';
+        if (i === selectedImage) {
+            cssClass = 'highlighted'
+        }
+        return <img onClick={pickImage} src={i} alt='dog' key={i} className={cssClass}/>
+    })
         return(
             <div className="ImagePicker">
                 {imagesList}                
