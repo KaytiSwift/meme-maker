@@ -8,7 +8,6 @@ div.TextInputs {
 
 label, input {
     font-size: 20px;
-    color: white;
-    text-shadow: 2px 2px #0c0c0c;
+    color: black;
     margin-left: 1em;
 }

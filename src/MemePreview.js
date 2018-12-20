@@ -8,7 +8,7 @@ class MemePreview extends Component{
             backgroundImage: `url(${selectedImage})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'contain',
-            maxWidth: '60vw',
+            maxWidth: '50vw',
 
           };
         return(

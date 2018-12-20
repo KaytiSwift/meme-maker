@@ -9,8 +9,8 @@ class MemeEditor extends Component {
         super();
         this.state = {
             images: ['/images/Dog.jpg', '/images/Dog2.jpg', '/images/dog3.jpg', '/images/dog4.jpg'],
-            topText: 'this is top text',
-            bottomText: 'this is bottom text',
+            topText: '',
+            bottomText: '',
             selectedImage: '/images/Dog.jpg' 
         }
     }
